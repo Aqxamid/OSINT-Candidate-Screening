@@ -1,0 +1,254 @@
+[
+  {
+    "path": "README.md",
+    "purpose": "Project overview and quick start",
+    "group": "Root",
+    "provider": "Included"
+  },
+  {
+    "path": "project-files.json",
+    "purpose": "This checklist (read by dashboard and GUI)",
+    "group": "Root",
+    "provider": "Included"
+  },
+  {
+    "path": ".gitignore",
+    "purpose": "Keeps secrets, CSVs and reports out of git",
+    "group": "Root",
+    "provider": "Included"
+  },
+  {
+    "path": "backend/package.json",
+    "purpose": "Node dependencies and scripts",
+    "group": "Backend",
+    "provider": "Included"
+  },
+  {
+    "path": "backend/server.js",
+    "purpose": "Express entry point",
+    "group": "Backend",
+    "provider": "Included"
+  },
+  {
+    "path": "backend/.env.example",
+    "purpose": "Environment template",
+    "group": "Backend",
+    "provider": "Included"
+  },
+  {
+    "path": "backend/.env",
+    "purpose": "Your real secrets (copy from .env.example)",
+    "group": "Backend",
+    "provider": "You add"
+  },
+  {
+    "path": "backend/node_modules",
+    "purpose": "Installed with `npm install`",
+    "group": "Backend",
+    "provider": "You add (npm install)"
+  },
+  {
+    "path": "backend/db/schema.sql",
+    "purpose": "Reference applicants table",
+    "group": "Backend",
+    "provider": "Included"
+  },
+  {
+    "path": "backend/config/db.js",
+    "purpose": "PostgreSQL pool",
+    "group": "Backend",
+    "provider": "Included"
+  },
+  {
+    "path": "backend/middleware/authMiddleware.js",
+    "purpose": "Bearer token or session auth",
+    "group": "Backend",
+    "provider": "Included"
+  },
+  {
+    "path": "backend/controllers/osintExportController.js",
+    "purpose": "CSV export handler",
+    "group": "Backend",
+    "provider": "Included"
+  },
+  {
+    "path": "backend/controllers/authController.js",
+    "purpose": "Dashboard login/logout",
+    "group": "Backend",
+    "provider": "Included"
+  },
+  {
+    "path": "backend/controllers/osintScanController.js",
+    "purpose": "Dashboard scan, report and setup API",
+    "group": "Backend",
+    "provider": "Included"
+  },
+  {
+    "path": "backend/routes/adminRoutes.js",
+    "purpose": "/api/admin CSV export route",
+    "group": "Backend",
+    "provider": "Included"
+  },
+  {
+    "path": "backend/routes/authRoutes.js",
+    "purpose": "/api/admin/auth routes",
+    "group": "Backend",
+    "provider": "Included"
+  },
+  {
+    "path": "backend/routes/osintRoutes.js",
+    "purpose": "/api/admin/osint routes",
+    "group": "Backend",
+    "provider": "Included"
+  },
+  {
+    "path": "backend/services/applicantService.js",
+    "purpose": "Minimal applicant query",
+    "group": "Backend",
+    "provider": "Included"
+  },
+  {
+    "path": "backend/services/scanJobService.js",
+    "purpose": "Runs the Python worker, streams progress",
+    "group": "Backend",
+    "provider": "Included"
+  },
+  {
+    "path": "backend/services/reportService.js",
+    "purpose": "Safe report listing, serving and deletion",
+    "group": "Backend",
+    "provider": "Included"
+  },
+  {
+    "path": "backend/services/sessionService.js",
+    "purpose": "Signed session cookies",
+    "group": "Backend",
+    "provider": "Included"
+  },
+  {
+    "path": "backend/services/setupService.js",
+    "purpose": "Environment and file checks",
+    "group": "Backend",
+    "provider": "Included"
+  },
+  {
+    "path": "backend/utils/csvFormatter.js",
+    "purpose": "Safe CSV formatting",
+    "group": "Backend",
+    "provider": "Included"
+  },
+  {
+    "path": "backend/utils/security.js",
+    "purpose": "Constant-time compare, cookie parsing",
+    "group": "Backend",
+    "provider": "Included"
+  },
+  {
+    "path": "backend/utils/rateLimiter.js",
+    "purpose": "Login brute-force protection",
+    "group": "Backend",
+    "provider": "Included"
+  },
+  {
+    "path": "backend/utils/handleValidator.js",
+    "purpose": "Handle/ID validation (mirrors Python)",
+    "group": "Backend",
+    "provider": "Included"
+  },
+  {
+    "path": "backend/utils/paths.js",
+    "purpose": "Scanner paths and Python lookup",
+    "group": "Backend",
+    "provider": "Included"
+  },
+  {
+    "path": "backend/scripts/setup-scanner.js",
+    "purpose": "`npm run setup:scanner` creates the Python venv",
+    "group": "Backend",
+    "provider": "Included"
+  },
+  {
+    "path": "backend/public/index.html",
+    "purpose": "Compiled web dashboard page",
+    "group": "Dashboard",
+    "provider": "Included"
+  },
+  {
+    "path": "frontend/src/App.jsx",
+    "purpose": "React & Shadcn UI dashboard application",
+    "group": "Dashboard",
+    "provider": "Included"
+  },
+  {
+    "path": "frontend/package.json",
+    "purpose": "Frontend build tools and UI dependencies",
+    "group": "Dashboard",
+    "provider": "Included"
+  },
+  {
+    "path": "osint-scanner/scan_worker.py",
+    "purpose": "Worker the dashboard launches (NDJSON output)",
+    "group": "Scanner",
+    "provider": "Included"
+  },
+  {
+    "path": "osint-scanner/scanner_core.py",
+    "purpose": "Shared scan engine",
+    "group": "Scanner",
+    "provider": "Included"
+  },
+  {
+    "path": "osint-scanner/batch_maigret.py",
+    "purpose": "Command-line scanner",
+    "group": "Scanner",
+    "provider": "Included"
+  },
+  {
+    "path": "osint-scanner/gui_app.py",
+    "purpose": "Optional desktop GUI (Tkinter)",
+    "group": "Scanner",
+    "provider": "Included"
+  },
+  {
+    "path": "osint-scanner/requirements.txt",
+    "purpose": "Python dependencies",
+    "group": "Scanner",
+    "provider": "Included"
+  },
+  {
+    "path": "osint-scanner/run_gui.bat",
+    "purpose": "Windows launcher for the desktop GUI",
+    "group": "Scanner",
+    "provider": "Included"
+  },
+  {
+    "path": "osint-scanner/run_gui.sh",
+    "purpose": "Linux/macOS launcher for the desktop GUI",
+    "group": "Scanner",
+    "provider": "Included"
+  },
+  {
+    "path": "osint-scanner/README.md",
+    "purpose": "Scanner documentation",
+    "group": "Scanner",
+    "provider": "Included"
+  },
+  {
+    "path": "osint-scanner/.venv",
+    "purpose": "Python virtual environment",
+    "group": "Scanner",
+    "provider": "You add (npm run setup:scanner)"
+  },
+  {
+    "path": "osint-scanner/pcs_recruitment_osint*.csv",
+    "purpose": "Exported CSV (CLI / desktop GUI only)",
+    "group": "Scanner",
+    "provider": "Optional"
+  },
+  {
+    "path": "osint-scanner/reports",
+    "purpose": "Scan output (HTML + JSON per applicant)",
+    "group": "Scanner",
+    "provider": "Auto-created"
+  }
+]
